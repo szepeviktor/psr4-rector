@@ -1,0 +1,25 @@
+{
+    "name": "szepeviktor/psr4-rector",
+    "description": "Rector upgrade rule for non-PSR-4 class filenames",
+    "type": "rector-extension",
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "rector/rector": "^0.18.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SzepeViktor\\Rector\\Psr4\\": "src/",
+            "WPO\\WC\\PDF_Invoices\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Viktor Szépe",
+            "email": "viktor@szepe.net"
+        }
+    ]
+}
