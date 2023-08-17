@@ -32,6 +32,9 @@ final class Psr4Rector extends AbstractRector
      */
     public function refactor(Node $node): ?Node
     {
+        // A namespace/útvonal párost bedrótozhatod, azt majd konfiguraálhatóvá teszem.
+        // "WPO\\WC\\PDF_Invoices\\": "includes/"
+        
         // we only care about "set*" method names
         if (! $this->isName($node->name, 'set*')) {
             // return null to skip it
